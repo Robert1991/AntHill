@@ -12,11 +12,7 @@ public class AntColonyIterator {
 
 	public void letAntsCrawl() {
 		gameBoard = gameConfiguration.createBoard();
-		
 		while(gameBoard.stillFoodToCollect())
 			gameBoard.iterate();
 	}
-	
-	
-	
 }

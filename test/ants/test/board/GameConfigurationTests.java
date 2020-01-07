@@ -20,14 +20,14 @@ public class GameConfigurationTests {
 	@Test
 	public void testThatTheGameConfigurationNeedsAtLeastOneFoodUnitPerFieldToBeInitialized() {
 		thrown.expect(IllegalArgumentException.class);
-		thrown.expectMessage("the minimum food count per cell is 1!");
+		thrown.expectMessage("the maximum food count per cell has to be at least 1!");
 		new GameConfiguration(new BoardDimension(3, 4), 0, 3, 1);
 	}
 	
 	@Test
 	public void testThatTheGameConfigurationNeedsAtLeastOneFoodCell() {
 		thrown.expect(IllegalArgumentException.class);
-		thrown.expectMessage("the minimum food cell count is 1!");
+		thrown.expectMessage("the food cell count has to be greater or equal than 1!");
 		new GameConfiguration(new BoardDimension(3, 4), 1, 0, 1);
 	}
 	

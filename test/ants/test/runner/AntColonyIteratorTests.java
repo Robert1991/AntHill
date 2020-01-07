@@ -1,14 +1,13 @@
-import org.junit.Test;
+package ants.test.runner;
+import static org.hamcrest.Matchers.notNullValue;
 import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 import org.junit.Before;
-
-import static org.mockito.Matchers.eq;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.times;
-import static org.hamcrest.Matchers.*;
+import org.junit.Test;
 
 import ants.board.GameBoard;
 import ants.board.dimension.BoardDimension;

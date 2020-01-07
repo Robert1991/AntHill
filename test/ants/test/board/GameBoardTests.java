@@ -437,7 +437,7 @@ public class GameBoardTests {
 	}
 	
 	@Test
-//	@Ignore
+	@Ignore
 	public void foo() throws InterruptedException {
 		GameBoard board = GameBoardFactory.createFor(new GameConfiguration(BoardDimension.of(10, 15), 25,7,9));
 		while(board.stillFoodToCollect()) {			
